@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/accountable-calculation-ui/static/css/main.2a98a0f2.css",
+    "main.js": "/accountable-calculation-ui/static/js/main.1a374ee7.js",
+    "static/js/787.6d9ad0a3.chunk.js": "/accountable-calculation-ui/static/js/787.6d9ad0a3.chunk.js",
+    "index.html": "/accountable-calculation-ui/index.html",
+    "main.2a98a0f2.css.map": "/accountable-calculation-ui/static/css/main.2a98a0f2.css.map",
+    "main.1a374ee7.js.map": "/accountable-calculation-ui/static/js/main.1a374ee7.js.map",
+    "787.6d9ad0a3.chunk.js.map": "/accountable-calculation-ui/static/js/787.6d9ad0a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a98a0f2.css",
+    "static/js/main.1a374ee7.js"
+  ]
+}

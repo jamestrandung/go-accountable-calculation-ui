@@ -47,10 +47,6 @@ function TagExplorer({ dict, changeToViewVariables }) {
     return result;
   }, [dict]);
 
-  if (extractedTags.length === 0) {
-    return (<div>This calculation log does not contain any tags.</div>);
-  }
-
   const [searchText, setSearchText] = React.useState('');
   const [order, setOrder] = React.useState('asc');
   const [orderBy, setOrderBy] = React.useState('name');
@@ -82,6 +78,10 @@ function TagExplorer({ dict, changeToViewVariables }) {
     setOrder(isAsc ? 'desc' : 'asc');
     setOrderBy(property);
   };
+
+  if (extractedTags.length === 0) {
+    return (<div>This calculation log does not contain any tags.</div>);
+  }
 
   return (
     <Paper sx={{ width: '100%', overflow: 'hidden' }}>
