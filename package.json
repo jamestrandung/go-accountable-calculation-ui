@@ -1,7 +1,7 @@
 {
   "name": "accountable-calculation-ui",
   "version": "0.1.0",
-  "homepage": "https://jamestrandung.github.io/accountable-calculation-ui",
+  "homepage": "https://jamestrandung.github.io/go-accountable-calculation-ui",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.1",
