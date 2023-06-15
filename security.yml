@@ -1,0 +1,21 @@
+# Read more about GitLab security scannings 
+# here: https://docs.gitlab.com/ee/user/application_security/
+
+include:
+  - template: Security/SAST.gitlab-ci.yml
+
+# SAST
+variables:
+    # See https://docs.gitlab.com/ee/user/application_security/sast/analyzers.html
+    # for list of analyzers
+  SAST_EXCLUDED_ANALYZERS: "bandit, brakeman, flawfinder, gosec, kubesec, phpcs-security-audit, pmd-apex, security-code-scan, semgrep, sobelow, spotbugs"
+
+sast:
+  stage: ".pre"
+nodejs-scan-sast:
+  rules:
+  - if: $SAST_SCAN_ENABLED == "true"
+
+eslint-sast:
+  rules:
+  - if: $SAST_SCAN_ENABLED == "true"
